@@ -106,6 +106,3 @@ venv.bak/
 
 # ma stuf
 old/
-
-# Ignore model (for now)
-secureimage_solver/captcha_train/*
