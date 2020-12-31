@@ -16,4 +16,4 @@ info_resi = jne.cek_resi("CGK2H03789568816")
 print(info_resi)
 ```
 
-Terimakasih kepada Sampriti Panda karena telah memberikan [securimage_solver](https://github.com/sampritipanda/securimage_solver).
+Terimakasih kepada @sampritipanda karena telah memberikan [securimage_solver](https://github.com/sampritipanda/securimage_solver).
