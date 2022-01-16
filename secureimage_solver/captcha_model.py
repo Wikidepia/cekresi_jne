@@ -103,9 +103,8 @@ def loss(logits, labels):
 
 
 def training(loss):
-  optimizer = tf.compat.v1.train.AdamOptimizer(1e-4)
-  train_op = optimizer.minimize(loss)
-  return train_op
+    optimizer = tf.compat.v1.train.AdamOptimizer(1e-4)
+    return optimizer.minimize(loss)
 
 
 def evaluation(logits, labels):

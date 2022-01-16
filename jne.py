@@ -89,10 +89,10 @@ def cek_resi(resilist):
 
         # History Tracking
         histrack = df_resi[2].to_dict(orient="records")
-        history_list = []
-        for history in histrack:
-            history_list.append(
-                {"time": history["History"], "desc": history["History.1"]}
-            )
+        history_list = [
+            {"time": history["History"], "desc": history["History.1"]}
+            for history in histrack
+        ]
+
         result_resi["history"] = history_list
     return result_resi

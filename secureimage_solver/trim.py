@@ -14,13 +14,12 @@ def trim(image):
     else:
         arr = [row[width_trim:-width_trim] for row in arr]
     arr = np.asarray(arr)
-    image_new = Image.fromarray(arr.astype(np.uint8))
-    return image_new
+    return Image.fromarray(arr.astype(np.uint8))
 
 
 def main():
     dir_name = sys.argv[1]
-    for i, file_name in enumerate(os.listdir('./' + dir_name)):
+    for file_name in os.listdir('./' + dir_name):
         path = './' + dir_name + '/' + file_name
         print(path)
         image = Image.open(path)
